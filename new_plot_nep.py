@@ -206,6 +206,7 @@ if __name__ == "__main__":
     plt.subplot(2, 2, 1)
     set_fig_properties([plt.gca()])
     plt.loglog(loss[:, 0], loss[:, 1], ls="-", lw=lw, c="C1", label="Total")
+    plt.loglog(loss[:, 0], loss[:, 2],  ls="-", lw=lw, c = "C4", label=r"$L_{1}$")
     plt.loglog(loss[:, 0], loss[:, 3], ls="-", lw=lw, c="C5", label=r"$L_{2}$")
     plt.loglog(loss[:, 0], loss[:, 4], ls="-", lw=lw, c="C0", label="Energy_train")
     plt.loglog(loss[:, 0], loss[:, 5], ls="-", lw=lw, c="C2", label="Force_train")
